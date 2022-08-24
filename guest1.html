@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="todoApp.js"></script>
+  <script>
+    const token = 'token2';
+  </script>
+</head>
+<body>
+  <div class="container" id="todoApp">
+    <header class="header">
+      <nav class="header__nav nav-header">
+        <ul id="todo-list" class="nav-header__list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Мои дела</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="guest1.html" class="nav-header__link">Дела гостя1</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="guest2.html" class="nav-header__link">Дела гостя2</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Дела гостя1</h1>
+      <form class="main__form create-form">
+        <input class="create-form__input" type="text" placeholder="Название нового дела">
+        <button class="create-form__add-btn" type="submit" disabled>Добавить дело</button>
+      </form>
+      <ul class="main__list">
+
+      </ul>
+    </main>
+  </div>
+</body>
+</html>

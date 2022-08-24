@@ -1,0 +1,174 @@
+/* Обнуление */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+input,
+button {
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+
+/* === */
+:root {
+  --color-primary: #2196F3;
+  --color-primary-active: #1E88E5;
+  --margin: 40px;
+  --padding: 20px;
+}
+
+.container {
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  display: flex;
+  margin: 0 calc(-1 * var(--margin));
+  padding: 0 var(--margin);
+  min-height: 60px;
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.nav-header__list {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-header__item {
+  height: 100%;
+}
+
+.nav-header__link {
+  padding: 0 var(--padding);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.create-form__add-btn {
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--color-primary);
+  transition: all .3s ease-in-out;
+}
+
+.nav-header__link:hover,
+.nav-header__link:focus-visible,
+.create-form__add-btn:hover,
+.create-form__add-btn:focus-visible {
+  background-color: var(--color-primary-active);
+}
+
+.nav-header__link:active,
+.create-form__add-btn:active {
+  transform: scale(.9);
+}
+
+.main__title {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.create-form {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.create-form__input {
+  flex: 1 1 auto;
+  padding: 10px var(--padding);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todos__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.todos__item:not(:first-child) {
+  border-top: none;
+}
+
+.done {
+  background-color: rgba(8, 192, 8, 0.857);
+}
+
+.todos__descr {
+  word-break: break-all;
+}
+
+.todos__inner {
+  min-width: 180px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.todos__done-btn,
+.todos__delete-btn {
+  padding: 5px 10px;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.todos__done-btn {
+  background-color: green;
+}
+
+.todos__delete-btn {
+  background-color: red;
+}
+
+.todos__done-btn:hover,
+.todos__done-btn:focus-visible,
+.todos__delete-btn:hover,
+.todos__delete-btn:focus-visible {
+  opacity: .5;
+}
+
+.todos__done-btn:active,
+.todos__delete-btn:active {
+  transform: scale(.9);
+}
